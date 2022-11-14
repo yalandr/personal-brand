@@ -30,26 +30,13 @@ if (animatedItems.length) {
 
 window.addEventListener('scroll', fadeInOnScroll);
 
-// CAROUSEL
-// var splide = new Splide( '.splide', {
-//     perPage: 3,
-//     type   : 'loop',
-//     perMove: 1,
-// });
-// if (document.body.clientWidth < 1000) {
-//     var splide = new Splide( '.splide', {
-//         perPage: 2,
-//         type   : 'loop',
-//         perMove: 1,
-//     });
-// }
-// if (document.body.clientWidth < 680) {
-//     var splide = new Splide( '.splide', {
-//         perPage: 1,
-//         type   : 'loop',
-//         perMove: 1,
-//     });
-// }
-// splide.mount();
+// MENU
+const menuBtn = document.querySelector('.menu-btn-img');
+const navMenu = document.querySelector('.navigation');
+
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle("opened");
+    navMenu.classList.toggle("opened");
+})
                             
                             

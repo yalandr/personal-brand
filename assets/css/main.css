@@ -79,6 +79,18 @@ body {
     display: block;
     width: 8.75rem;
 }
+.nav-wrapper {
+    overflow: hidden;
+}
+.navigation {
+    opacity: 0;
+    transform: translateX(120%);
+    transition: .3s;
+}
+.navigation.opened {
+    opacity: 1;
+    transform: translateX(0)
+}
 .navigation-item {
     font-style: normal;
     font-weight: 700;
@@ -87,6 +99,16 @@ body {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     margin-right: 1rem;
+}
+.menu-btn-img {
+    display: block;
+    width: 2rem;
+    height: auto;
+    cursor: pointer;
+    transition: .3s;
+}
+.menu-btn-img.opened {
+    transform: rotateZ(90deg);
 }
 
 /*==== HERO ==================*/
@@ -108,7 +130,7 @@ body {
     background: var(--light-grey);
     border-radius: 54.5158px;
     text-align: center;
-    padding: 3rem;
+    padding: 3.5rem 4rem;
     position: relative;
 }
 .heading-badge {
@@ -122,11 +144,11 @@ body {
     transform: rotate(9.99deg);
     background-color: var(--brand-color);
     border-radius: 43.6126px;
-    padding: 2rem;
+    padding: 2rem 4rem;
     position: absolute;
     z-index: 3;
     right: -10%;
-    top: -50%;
+    top: -45%;
 }
 .hero-description-wrapper {
     margin: 9rem 0;
@@ -152,6 +174,11 @@ body {
     color: #DBFF02;
     text-align: center;
     padding: 2rem;
+}
+.acton-banner-arrow {
+    width: 53px;
+    height: auto;
+    margin-left: 2rem;
 }
 
 
