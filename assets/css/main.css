@@ -15,7 +15,8 @@ li {
     --brand-color: #DBFF02;
     --dark-grey: #474747;
     --light-grey: #E9E9E9;
-    --font-primary: 'EuropeExtendedC';
+    /* --font-primary: 'EuropeExtendedC'; */
+    --font-primary: 'Montserrat';
     --font-secondary: 'Exo 2';
 }
 /*==== COMMON =================*/
@@ -26,8 +27,10 @@ html {
 body {
     min-height: 100vh;
     overflow-x: hidden;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: var(--font-primary), sans-serif;
     font-size: 1rem;
+    font-weight: 400;
     background-color: var(--dark-grey);
 }
 .container {
@@ -59,15 +62,15 @@ body {
     font-style: italic !important;
 }
 
-
-
 /*ANIMATIONS*/
 .animated {
     opacity: 0;
+    transform: translateY(5rem);
     transition: .8s;
 }
 .fade-in {
     opacity: 1;
+    transform: translateY(0);
 }
 
 /*==== HEADER ==================*/
@@ -85,6 +88,7 @@ body {
     line-height: 100%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-right: 1rem;
 }
 
 /*==== HERO ==================*/
@@ -297,6 +301,7 @@ body {
 .form-section .btn {
     background: #DBFF02;
     border-radius: 50.5296px;
+    font-family: var(--font-primary);
     font-weight: 700;
     font-size: 60.382px;
     line-height: 86%;
@@ -353,7 +358,11 @@ body {
 }
 .speaker-img {
     position: relative;
-    z-index: 3
+    z-index: 3;
+    left: 0;
+    bottom: -3px;
+    width: 56rem;
+    height: auto;
 }
 .section-content-part.image .decor-ellipse {
     position: absolute;
@@ -374,7 +383,7 @@ body {
     font-size: 4.5rem;
     line-height: 86%;
     letter-spacing: 0.03em;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 .section-content-part.text .section-text {
     max-width: 798px;
@@ -382,27 +391,28 @@ body {
     font-size: 3rem;
     font-weight: 400;
     font-family: var(--font-secondary), sans-serif;
+    margin-bottom: 3.2rem;
 }
 
 
 
 /*==== MEDIA QUERIES ==============*/
-@media (max-width: 1399.98px) {
+@media (max-width: 1600px) {
     
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
     
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
     
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
     
 }
