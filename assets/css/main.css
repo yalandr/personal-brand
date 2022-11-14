@@ -49,6 +49,9 @@ body {
 .just-center {
     justify-content: center;
 }
+.column {
+    flex-direction: column;
+}
 .text-colored {
     color: var(--brand-color);
 }
@@ -253,6 +256,10 @@ body {
     padding: 1.8rem 2.5rem;
     list-style-position: inside;
 }
+.files-link-wrapper {
+    position: relative;
+    padding: 5rem 0 2rem;
+}
 .files-link {
     display: block;
     font-weight: 700;
@@ -262,8 +269,120 @@ body {
     color: var(--brand-color);
     margin-left: 10%;
 }
+.files-link-wrapper .snowflake-decor {
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    top: -1.5rem;
+    left: -4.5rem;
+}
 
-/*==== FOOTER ===================*/
+/*==== FORM-SECTION ===================*/
+.form-section {
+    padding: 25rem 0 22rem 0;
+    background: radial-gradient(100% 359.18% at 0% 0%, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.03) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border: 1.19039px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 23.8077px 47.6155px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(17.8558px);
+}
+.form-section p {
+    font-weight: 700;
+    font-size: 60.382px;
+    line-height: 86%;
+    letter-spacing: 0.03em;
+    color: #DBFF02;
+    text-align: center;
+    margin-bottom: 9rem;
+}
+.form-section .btn {
+    background: #DBFF02;
+    border-radius: 50.5296px;
+    font-weight: 700;
+    font-size: 60.382px;
+    line-height: 86%;
+    letter-spacing: 0.03em;
+    color: #474747;
+    border: none;
+    height: 10rem;
+    padding: 0 6rem;
+    cursor: pointer;
+}
+
+/*==== TARGET ========================*/
+.target-section {
+    background-color: var(--light-grey);
+    padding: 9rem 0 7.5rem 0;
+    position: relative;
+    overflow: hidden
+}
+.target-section .section-text {
+    max-width: 989px;
+    font-family: var(--font-secondary), sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 86%;
+    letter-spacing: 0.03em;
+    color: #4C4C4C;
+}
+.target-section .section-text.decorated {
+    max-width: 1025px;
+    background: radial-gradient(100% 359.18% at 0% 0%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 0px 24.1528px 48.3056px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(18.1146px);
+    border-radius: 24.1528px;
+    margin-top: 8rem;
+    padding: 2rem;
+    transform: translateX(14rem)
+}
+.target-section .snowflake-decor {
+    position: absolute;
+    width: 65rem;
+    height: auto;
+    top: 0;
+    left: -20%;
+}
+
+/*==== SPEAKER ==========================*/
+.speaker-section {
+    background-color: var(--dark-grey);
+    overflow: hidden
+}
+.section-content-part.image {
+    position: relative;
+}
+.speaker-img {
+    position: relative;
+    z-index: 3
+}
+.section-content-part.image .decor-ellipse {
+    position: absolute;
+    left: 0;
+    right: 30%;
+    top: 30%;
+    bottom: 0;
+    background: var(--brand-color);
+    mix-blend-mode: normal;
+    filter: blur(156.978px);
+    transform: rotate(-11.53deg);
+}
+.section-content-part.text {
+    padding-top: 10rem;
+}
+.speaker-name {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 86%;
+    letter-spacing: 0.03em;
+    margin-bottom: 2rem;
+}
+.section-content-part.text .section-text {
+    max-width: 798px;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: var(--font-secondary), sans-serif;
+}
 
 
 
