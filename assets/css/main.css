@@ -15,8 +15,7 @@ li {
     --brand-color: #DBFF02;
     --dark-grey: #474747;
     --light-grey: #E9E9E9;
-    /* --font-primary: 'EuropeExtendedC'; */
-    --font-primary: 'Montserrat';
+    --font-primary: 'EuropeExtendedC';
     --font-secondary: 'Exo 2';
 }
 /*==== COMMON =================*/
@@ -27,8 +26,7 @@ html {
 body {
     min-height: 100vh;
     overflow-x: hidden;
-    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: var(--font-primary), sans-serif;
+    font-family: var(--font-primary), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     background-color: var(--dark-grey);
@@ -169,7 +167,6 @@ body {
     font-size: 3rem;
     line-height: 1;
     color: var(--dark-grey);
-    font-family: var(--font-primary), sans-serif;
     font-style: normal;
     margin-bottom: 2rem;
 }
@@ -294,14 +291,14 @@ body {
     font-size: 60.382px;
     line-height: 86%;
     letter-spacing: 0.03em;
-    color: #DBFF02;
+    color: var(--brand-color);
     text-align: center;
     margin-bottom: 9rem;
 }
 .form-section .btn {
-    background: #DBFF02;
+    background: var(--brand-color);
     border-radius: 50.5296px;
-    font-family: var(--font-primary);
+    font-family: var(--font-primary), sans-serif;
     font-weight: 700;
     font-size: 60.382px;
     line-height: 86%;
