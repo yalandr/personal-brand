@@ -45,5 +45,77 @@ menuBtn.addEventListener('click', () => {
 const scrollToElem = (elem) => {
     document.querySelector(elem).scrollIntoView({behavior:"smooth"});
 }
+
+// FORM SENDING
+const form = document.getElementById('form');
+form.addEventListener('submit', formSend);
+
+async function formSend(e) {
+    e.preventDefault();
+
+    let error = formValidate(form);
+
+    let formData = new FormData(form);
+
+    if (error === 0) {
+        form.classList.add('sending');
+        let response = await fetch('send.php', {
+            method: 'POST',
+            body: formData
+        });
+        if (response.ok) {
+            letresult = await response.json();
+            alert(result.message);
+            form.reset();
+            form.classList.remove('sending');
+        } else {
+            alert('fetch error!');
+            form.classList.remove('sending');
+        }
+    } else {
+        alert('pre-fetch error!')
+    }
+}
+
+function formValidate(form) {
+    let error = 0;
+    let requiredFields = document.querySelectorAll('.required');
+
+    for (let i = 0; i < requiredFields.length; i++) {
+        const input = requiredFields[i];
+        formRemoveError(input);
+
+        if (input.value === '') {
+            formAddError(input);
+            error++;
+        }
+
+        if (input.classList.contains('email')) {
+            if (emailTest(input)) {
+                formAddError(input);
+                error++;
+            } else {
+                if (input.value === '') {
+                    formAddError(input);
+                    error++;
+                }
+            }
+        }
+    }
+    
+    return error;
+}
+
+function formAddError(input) {
+    input.classList.add('error');
+}
+
+function formRemoveError(input) {
+    input.classList.remove('error');
+}
+
+function emailTest(input) {
+    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
+}
                             
                             

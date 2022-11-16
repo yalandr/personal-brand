@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Title</title>
+    <meta name="description" content="Description"/>
+    <meta name="keywords" content="Keywords"/>
+    <meta property="og:title" content="Title"/>
+    <meta property="og:description" content="Description"/>
+    <meta property="og:image" content="assets/img/og-image.png"/>
+    <meta property="og:image:width" content="450"/>
+    <meta property="og:image:height" content="450"/>
+    <meta property="og:type" content="website"/>
+    <title>Personal Brand</title>
     <link rel="icon" href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -187,13 +195,28 @@
             </section>
             <section class="form-section">
                 <div class="container flex center just-center column">
-                    <p class="animated">
-                        тут форма для збору контактів: 
-                        ел. адреса та інстаграм
-                    </p>
-                    <button class="btn animated">
-                        ЗАБРОНЮВАТИ
-                    </button>
+                    <div class="form animated">
+                        <form action="#" id="form" class="form-body">
+                            <h3 class="form-heading">Data sending</h3>
+                            <div class="form-item">
+                                <label for="formName" class="form-label">Name*:</label>
+                                <input type="text" id="formName" name="name" class="form-input name required">
+                            </div>
+                            <div class="form-item">
+                                <label for="formEmail" class="form-label">E-mail*:</label>
+                                <input type="text" id="formEmail" name="email" class="form-input email required">
+                            </div>
+                            <button type="submit" class="form-btn btn">ЗАБРОНЮВАТИ</button>
+                        </form>
+                    </div>
+                    <div class="social-links-wrapper flex center just-center animated">
+                        <a href="#" class="social-link" target="_blank">
+                            <img src="assets/img/instagram.png" alt="Instagram" class="social-link-img">
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <img src="assets/img/telegram.png" alt="Telegram" class="social-link-img">
+                        </a>
+                    </div>
                 </div>
             </section>
             <section class="target-section">
