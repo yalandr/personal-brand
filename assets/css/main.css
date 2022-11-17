@@ -165,7 +165,7 @@ body {
 .descr-wrapper-part {
     font-weight: 700;
     font-size: 1.5rem;
-    line-height: 100%;
+    line-height: 120%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
@@ -869,6 +869,7 @@ body {
     }
     .descr-wrapper-part {
         font-size: .85rem;
+        line-height: 130%;
     }
     .action-banner {
         font-size: 1.5rem;
