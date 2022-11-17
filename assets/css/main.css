@@ -51,6 +51,9 @@ body {
 .just-center {
     justify-content: center;
 }
+.just-end {
+    justify-content: flex-end;
+}
 .column {
     flex-direction: column;
 }
@@ -74,11 +77,11 @@ body {
 
 /*==== HEADER ==================*/
 .header {
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 .logo-img {
     display: block;
-    width: 8.75rem;
+    width: 8rem;
     height: auto;
 }
 .nav-wrapper {
@@ -96,11 +99,12 @@ body {
 .navigation-item {
     font-style: normal;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 100%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     margin-right: 1rem;
+    text-transform: uppercase;
 }
 .navigation-mobile {
     display: none;
@@ -122,7 +126,7 @@ body {
 }
 .hero-heading-wrapper {
     text-align: center;
-    margin-top: 12rem;
+    margin-top: 16rem;
 }
 .main-heading {
     display: inline-block;
@@ -133,14 +137,14 @@ body {
     letter-spacing: 0.03em;
     color: var(--dark-grey);
     background: var(--light-grey);
-    border-radius: 54.5158px;
+    border-radius: 30px;
     text-align: center;
     padding: 3.5rem 4rem;
     position: relative;
 }
 .heading-badge {
     font-weight: 700;
-    font-size: 2.68rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     text-align: center;
@@ -148,19 +152,19 @@ body {
     color: var(--dark-grey);
     transform: rotate(9.99deg);
     background-color: var(--brand-color);
-    border-radius: 43.6126px;
-    padding: 2rem 4rem;
+    border-radius: 20px;
+    padding: 1.2rem 4rem;
     position: absolute;
     z-index: 3;
     right: -10%;
-    top: -45%;
+    top: -25%;
 }
 .hero-description-wrapper {
     margin: 12rem 0 9rem 0;
 }
 .descr-wrapper-part {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 100%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
@@ -173,7 +177,7 @@ body {
     box-shadow: 0px 24.1528px 48.3056px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(18.1146px);
     font-weight: 700;
-    font-size: 4.5rem;
+    font-size: 3.2rem;
     line-height: 86%;
     letter-spacing: 0.03em;
     color: #DBFF02;
@@ -182,9 +186,9 @@ body {
     cursor: pointer;
 }
 .acton-banner-arrow {
-    width: 3.3rem;
+    width: 2.3rem;
     height: auto;
-    margin-left: 2rem;
+    margin-left: 1.4rem;
 }
 
 
@@ -197,7 +201,7 @@ body {
 }
 .credo-section .section-heading {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.6rem;
     line-height: 1;
     color: var(--dark-grey);
     font-style: normal;
@@ -205,7 +209,7 @@ body {
 }
 .credo-section .section-text {
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 1.6rem;
     line-height: 1;
     color:var(--dark-grey);
     font-family: var(--font-secondary), sans-serif;
@@ -213,7 +217,7 @@ body {
 }
 .credo-section .section-text.small {
     font-weight: 400;
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     line-height: 1;
     color:var(--dark-grey);
     font-family: var(--font-secondary), sans-serif;
@@ -235,7 +239,7 @@ body {
 /*==== RUNNING STRING ==================*/
 .running-string {
     font-weight: 700;
-    font-size: 3.75rem;
+    font-size: 2.6rem;
     line-height: 86%;
     letter-spacing: 0.03em;
     color: var(--dark-grey);
@@ -251,23 +255,23 @@ body {
 .features-list-heading {
     font-style: italic;
     font-weight: 700;
-    font-size: 3.75rem;
+    font-size: 2.4rem;
     line-height: 86%;
     letter-spacing: -0.04em;
     color: var(--brand-color);
-    margin: 0 0 3rem -7.2rem;
+    margin: 0 0 3rem -6rem;
 }
 .features-heading-arrow-wrapper {
-    width: 5rem;
-    min-width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    min-width: 4rem;
+    height: 4rem;
     background-color: var(--brand-color);
     border-radius: 50%;
-    margin-right: 2.5rem;
+    margin-right: 2rem;
 }
 .features-heading-arrow {
-    width: 2.2rem;
-    min-width: 2.2rem;
+    width: 1.8rem;
+    min-width: 1.8rem;
     height: auto;
 }
 .features-list {
@@ -278,11 +282,11 @@ body {
     border: 1.19039px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 23.8077px 47.6155px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(17.8558px);
-    border-radius: 23.8077px;
+    border-radius: 18px;
     font-family: var(--font-secondary), sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.88rem;
+    font-size: 1.5rem;
     line-height: 86%;
     letter-spacing: 0.03em;
     color: #FFFFFF;
@@ -297,7 +301,7 @@ body {
 .files-link {
     display: block;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 100%;
     letter-spacing: 0.03em;
     color: var(--brand-color);
@@ -319,19 +323,7 @@ body {
     box-shadow: 0px 23.8077px 47.6155px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(17.8558px);
 }
-.form-section p {
-    font-weight: 700;
-    font-size: 3.7rem;
-    line-height: 86%;
-    letter-spacing: 0.03em;
-    color: var(--brand-color);
-    text-align: center;
-    margin-bottom: 9rem;
-}
-
-
-
-.form {
+.form-body {
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
@@ -341,8 +333,6 @@ body {
     border: 1.19039px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 23.8077px 47.6155px rgb(0 0 0 / 5%);
     backdrop-filter: blur(17.8558px);
-}
-.form-body {
     position: relative;
 }
 .form-body::after {
@@ -352,7 +342,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.8) url('../img/loading.gif') no-repeat center 50% / 20%;
+    border-radius: 20px;
     opacity: 0;
     visibility: hidden;
     transition: all .5s ease;
@@ -363,7 +354,7 @@ body {
 }
 .form-heading {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.4rem;
     line-height: 86%;
     letter-spacing: -0.04em;
     color: var(--brand-color);
@@ -373,8 +364,8 @@ body {
 .form-label {
     display: inline-block;
     color: #fff;
-    font-size: 22px;
-    margin-bottom: 1rem;
+    font-size: 18px;
+    margin-bottom: .5rem;
     font-family: var(--font-secondary), sans-serif;
 }
 .form-item {
@@ -385,11 +376,12 @@ body {
     height: 4rem;
     width: 100%;
     padding: 0 1.5rem;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: var(--font-secondary), sans-serif;
     outline: none;
-    font-size: 22px;
+    font-size: 18px;
     border: none;
+    color: #333
 }
 .form-input.valid {
     background-color: rgb(190, 247, 219);
@@ -397,28 +389,48 @@ body {
 .form-input.error {
     background-color: rgb(247, 190, 190);
 }
-.form-section .btn {
+.form-section .btn,
+.speaker-section .btn {
+    height: 5rem;
     width: 100%;
     background: var(--brand-color);
-    border-radius: 30px;
+    border-radius: 10px;
     font-family: var(--font-primary), sans-serif;
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2rem;
     letter-spacing: 0.03em;
     color: #474747;
     border: none;
-    height: 6rem;
     padding: 0;
     cursor: pointer;
     margin: 2rem 0;
 }
-.social-links-wrapper {
-    margin-top: 3rem;
+.message-success {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 86%;
+    letter-spacing: 0.03em;
+    color: var(--brand-color);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease;
 }
-.social-link-img {
-    width: 6rem;
-    height: auto;
-    margin: 1rem;
+.message-error {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 86%;
+    letter-spacing: 0.03em;
+    color: rgb(249, 127, 127);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease;
+}
+.message-success.visible,
+.message-error.visible {
+    opacity: 1;
+    visibility: visible;
 }
 
 /*==== TARGET ========================*/
@@ -429,17 +441,17 @@ body {
     overflow: hidden
 }
 .target-section .section-text {
-    max-width: 989px;
+    max-width: 860px;
     font-family: var(--font-secondary), sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 1.8rem;
     line-height: 86%;
     letter-spacing: 0.03em;
     color: #4C4C4C;
 }
 .target-section .section-text.decorated {
-    max-width: 1025px;
+    max-width: 860px;
     background: radial-gradient(100% 359.18% at 0% 0%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     box-shadow: 0px 24.1528px 48.3056px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(18.1146px);
@@ -459,51 +471,53 @@ body {
 /*==== SPEAKER ==========================*/
 .speaker-section {
     background-color: var(--dark-grey);
-    overflow: hidden
-}
-.section-content-part {
-    width: 50%;
-}
-.section-content-part.image {
+    background-image: url('../img/IMG_1803\ 1.png');
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 25%;
     position: relative;
+    overflow: hidden;
 }
-.speaker-img {
-    position: relative;
-    z-index: 3;
-    left: 0;
-    bottom: -3px;
-    width: 90%;
-    height: auto;
-}
-.section-content-part.image .decor-ellipse {
+.speaker-section .decor-ellipse {
     position: absolute;
     left: 0;
-    right: 30%;
-    top: 30%;
+    right: 70%;
+    top: 50%;
     bottom: 0;
     background: var(--brand-color);
     mix-blend-mode: normal;
     filter: blur(156.978px);
     transform: rotate(-11.53deg);
 }
-.section-content-part.text {
-    padding-top: 10rem;
+.speaker-section .container {
+    padding: 5rem 0 5rem 16%;
 }
 .speaker-name {
     font-weight: 700;
-    font-size: 4.5rem;
+    font-size: 3rem;
     line-height: 86%;
     letter-spacing: 0.03em;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
-.section-content-part.text .section-text {
+.speaker-section .section-text {
     width: 90%;
     max-width: 798px;
     color: #fff;
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: 400;
     font-family: var(--font-secondary), sans-serif;
-    margin-bottom: 3.2rem;
+    margin-bottom: 3rem;
+}
+.social-link {
+    display: inline-block;
+}
+.social-link-img {
+    width: 2.4rem;
+    height: auto;
+}
+.speaker-section .btn {
+    max-width: 640px;
+    padding: 0 1rem;
 }
 
 
@@ -569,9 +583,6 @@ body {
     }
     .files-link {
         font-size: 1.6rem;
-    }
-    .form-section {
-        /* padding: 15rem 0 12rem 0; */
     }
     .form-section p {
         font-size: 2rem;

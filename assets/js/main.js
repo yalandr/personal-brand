@@ -48,6 +48,8 @@ const scrollToElem = (elem) => {
 
 // FORM SENDING
 const form = document.getElementById('form');
+const messageSuccess = document.querySelector('.message-success');
+const messageError = document.querySelector('.message-error');
 form.addEventListener('submit', formSend);
 
 async function formSend(e) {
@@ -65,12 +67,14 @@ async function formSend(e) {
         });
         if (response.ok) {
             letresult = await response.json();
-            alert(result.message);
+            // alert(result.message);
             form.reset();
             form.classList.remove('sending');
+            messageSuccess.classList.add('visible');
         } else {
-            alert('fetch error!');
+            // alert('fetch error!');
             form.classList.remove('sending');
+            messageError.classList.add('visible');
         }
     } else {
         alert('pre-fetch error!')
