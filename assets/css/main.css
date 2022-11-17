@@ -391,7 +391,7 @@ body {
 }
 .form-section .btn,
 .speaker-section .btn {
-    height: 5rem;
+    min-height: 5rem;
     width: 100%;
     background: var(--brand-color);
     border-radius: 10px;
@@ -412,9 +412,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--brand-color);
     text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .2s ease;
+    display: none;
 }
 .message-error {
     font-weight: 700;
@@ -423,14 +421,11 @@ body {
     letter-spacing: 0.03em;
     color: rgb(249, 127, 127);
     text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .2s ease;
+    display: none;
 }
 .message-success.visible,
 .message-error.visible {
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
 
 /*==== TARGET ========================*/
@@ -455,7 +450,7 @@ body {
     background: radial-gradient(100% 359.18% at 0% 0%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     box-shadow: 0px 24.1528px 48.3056px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(18.1146px);
-    border-radius: 24.1528px;
+    border-radius: 24px;
     margin-top: 8rem;
     padding: 2rem;
     transform: translateX(14rem)
@@ -516,7 +511,7 @@ body {
     height: auto;
 }
 .speaker-section .btn {
-    max-width: 640px;
+    max-width: 720px;
     padding: 0 1rem;
 }
 
@@ -531,51 +526,48 @@ body {
         padding-top: 2rem;
     }
     .logo-img {
-        width: 6rem;
+        width: 5rem;
     }
     .navigation-item {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .menu-btn-img {
         width: 1.8rem;
     }
+    .main-heading {
+        font-size: 3.5rem;
+        border-radius: 20px;
+    }
     .heading-badge {
-        font-size: 2rem;
-        padding: 1.5rem 3rem;
-        right: -10%;
+        font-size: 1.8rem;
+        padding: 1rem 2.5rem;
+        right: -7%;
         top: -25%;
+        border-radius: 16px;
     }
     .descr-wrapper-part {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .action-banner {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     .acton-banner-arrow {
-        width: 2.8rem;
+        width: 2.1rem;
+    }
+    .credo-section {
+        padding: 6rem 0 5rem 0;
     }
     .credo-section .section-heading {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     .credo-section .section-text {
-        font-size: 1.8rem;
         margin-bottom: 1.8rem;
     }
-    .credo-section .section-text.small {
-        font-size: 1.5rem;
-    }
     .running-string {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
-    .features-list-heading {
-        font-size: 2.6rem;
-        margin: 0 0 3rem -6rem;
-    }
-    .features-heading-arrow-wrapper {
-        width: 4rem;
-        min-width: 4rem;
-        height: 4rem;
-        margin-right: 2rem;
+    .features-section {
+        padding: 6rem 0;
     }
     .features-list-item {
         font-size: 1.4rem;
@@ -584,24 +576,22 @@ body {
     .files-link {
         font-size: 1.6rem;
     }
-    .form-section p {
-        font-size: 2rem;
-        margin-bottom: 5rem;
+    .files-link-wrapper .snowflake-decor {
+        width: 11rem;
+        height: 11rem;
+        top: -1rem;
+        left: -3rem;
     }
-    .form-section .btn {
-        border-radius: 20px;
-        font-size: 2rem;
-        height: 5rem;
-        padding: 0 3rem;
+    .target-section {
+        padding: 6rem 0 6rem 0;
     }
     .target-section .section-text {
         max-width: 820px;
-        font-size: 2rem;
     }
     .target-section .section-text.decorated {
         max-width: 820px;
-        border-radius: 20px;
-        margin-top: 8rem;
+        border-radius: 16px;
+        margin-top: 6rem;
     }
     .section-content-part.text {
         padding-top: 7rem;
@@ -610,9 +600,12 @@ body {
         font-size: 2.8rem;
         margin-bottom: 2.2rem;
     }
-    .section-content-part.text .section-text {
-        font-size: 1.8rem;
+    .speaker-section .section-text {
+        font-size: 1.6rem;
         margin-bottom: 2.2rem;
+    }
+    .speaker-section .btn {
+        font-size: 1.8rem;
     }
 }
 
@@ -725,9 +718,23 @@ body {
         margin-top: 5rem;
         transform: translateX(10rem);
     }
-    .section-content-part.text .section-text {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
+    .speaker-section {
+        background-color: var(--dark-grey);
+        background-image: url('../img/IMG_1803\ 1.png');
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-size: 50%;
+    }
+    .speaker-section .container {
+        padding: 5rem 0 5rem 20%;
+    }
+    .speaker-section .section-text {
+        text-shadow: 0 3px 6px #111;
+    }
+    .speaker-section .decor-ellipse {
+        left: 0;
+        right: 50%;
+        top: 50%;
     }
 }
 
@@ -769,13 +776,16 @@ body {
         width: 60%;
         padding-top: 3rem;
     }
+    .speaker-section {
+        background-size: 60%;
+    }
     .speaker-name {
         font-size: 2.2rem;
         margin-bottom: 2rem;
     }
-    .section-content-part.text .section-text {
-        font-size: 1.2rem;
-        margin-bottom: 1.2rem;
+    .form-section .btn, .speaker-section .btn {
+        font-size: 1.5rem;
+        margin: 1.2rem 0;
     }
 }
 
@@ -844,7 +854,7 @@ body {
     .main-heading {
         width: 100%;
         font-size: 2.1rem;
-        border-radius: 20px;
+        border-radius: 16px;
         padding: 1.5rem 1.5rem;
     }
     .heading-badge {
@@ -852,6 +862,7 @@ body {
         padding: 0.5rem 2rem;
         right: -5%;
         top: -31%;
+        border-radius: 10px;
     }
     .hero-description-wrapper {
         margin: 6rem 0 4rem 0;
@@ -906,32 +917,54 @@ body {
     .form-section {
         padding: 4rem 0;
     }
+    .form-body {
+        padding: 2rem 1rem;
+    }
+    .form-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .form-input {
+        height: 2.8rem;
+        font-size: 16px;
+        border-radius: 8px;
+    }
     .form-section .btn {
         width: 100%;
-        border-radius: 20px;
+        border-radius: 10px;
         font-size: 1.2rem;
         height: 3rem;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
     .target-section {
         padding: 4rem 0 4rem 0;
     }
-    .speaker-section .section-content {
-        flex-direction: column-reverse;
+    .speaker-section {
+        background-size: 80%;
     }
-    .section-content-part.text {
-        width: 90%;
-        margin: 0 auto;
+    .speaker-section .container {
+        padding: 4rem 0 4rem 0;
     }
-    .section-content-part.text .section-text {
+    .speaker-name {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .social-link-img {
+        width: 2rem;
+        height: auto;
+        margin-left: 1rem;
+    }
+    .speaker-section .section-text {
         width: 100%;
-        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
     }
-    .section-content-part.image {
-        width: 100%;
+    .speaker-section .btn {
+        font-size: 1.2rem;
     }
-    .speaker-img {
-        bottom: -2px;
-        width: 80%;
+    .speaker-section .decor-ellipse {
+        left: 0;
+        right: 40%;
+        top: 40%;
     }
 }

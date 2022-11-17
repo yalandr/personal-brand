@@ -75,6 +75,7 @@ async function formSend(e) {
             // alert('fetch error!');
             form.classList.remove('sending');
             messageError.classList.add('visible');
+            form.reset();
         }
     } else {
         alert('pre-fetch error!')
