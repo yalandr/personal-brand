@@ -81,8 +81,10 @@ body {
 }
 .logo-img {
     display: block;
-    width: 8rem;
+    width: 7rem;
     height: auto;
+    -webkit-filter: drop-shadow(0 0 5px var(--brand-color));
+    filter: drop-shadow(0 0 5px var(--brand-color));
 }
 .nav-wrapper {
     overflow: hidden;
