@@ -552,7 +552,11 @@ body {
     left: 50%;
     transform: translateX(-55%)
 }
-
+.copyright {
+    font-size: 12px;
+    color: #fff;
+    font-family: var(--font-secondary), sans-serif;
+}
 
 
 /*==== MEDIA QUERIES ==============*/
