@@ -239,13 +239,28 @@ body {
 
 /*==== RUNNING STRING ==================*/
 .running-string {
+    background-color: var(--brand-color);
+    padding: 2rem 0;
+}
+.running-string p {
     font-weight: 700;
     font-size: 2.6rem;
     line-height: 86%;
     letter-spacing: 0.03em;
     color: var(--dark-grey);
-    background-color: var(--brand-color);
-    padding: 2rem 0;
+    text-align:center;
+    color:#fff;
+    animation: text 40s infinite linear;
+    padding-left: 100%;
+    white-space: nowrap;
+}
+@keyframes text {
+    0%{
+      transform: translate(0, 0);
+    }
+    100%{
+      transform: translate(-160%, 0);
+    }
 }
 
 /*==== FEATURES =====================*/
@@ -507,7 +522,7 @@ body {
 }
 .speaker-text-container {
     width: 60%;
-    padding: 5rem 3rem 5rem 0;
+    padding: 5rem 3rem 4rem 0;
 }
 .speaker-name {
     font-weight: 700;
@@ -529,9 +544,9 @@ body {
     display: inline-block;
 }
 .social-link-img {
-    width: 2.4rem;
+    width: 3rem;
     height: auto;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 .speaker-section .btn {
     max-width: 720px;
@@ -637,6 +652,9 @@ body {
     }
     .section-content-part.text {
         padding-top: 7rem;
+    }
+    .speaker-text-container {
+        padding: 5rem 3rem 3rem 0px;
     }
     .speaker-name {
         font-size: 2.8rem;
@@ -773,7 +791,7 @@ body {
     }
     .speaker-text-container {
         width: 60%;
-        padding: 4rem 1.2rem 4rem 2rem;
+        padding: 4rem 1.2rem 2.5rem 2rem;
     }
     .speaker-section .section-text {
         text-shadow: 0 3px 6px #111;
@@ -864,11 +882,14 @@ body {
     }
     .speaker-text-container {
         width: 55%;
-        padding: 3rem 1.2rem 3rem 2rem;
+        padding: 3rem 1.2rem 2rem 2rem;
     }
     .speaker-img-container {
         width: 55%;
         height: 58rem;
+    }
+    .running-string p {
+        animation: text 30s infinite linear;
     }
 }
 
@@ -1045,5 +1066,8 @@ body {
         left: 0;
         right: 40%;
         top: 40%;
+    }
+    .running-string p {
+        animation: text 20s infinite linear;
     }
 }
