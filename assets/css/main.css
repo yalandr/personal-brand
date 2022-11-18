@@ -30,7 +30,10 @@ body {
     font-family: var(--font-primary), 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    background-color: var(--dark-grey);
+    /* background-color: var(--dark-grey); */
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .container {
     width: 90%;
@@ -266,7 +269,7 @@ body {
 /*==== FEATURES =====================*/
 .features-section {
     padding: 8rem 0;
-    background-color: var(--dark-grey);
+    /* background-color: var(--dark-grey); */
 }
 .features-list-heading {
     font-style: italic;
@@ -505,7 +508,7 @@ body {
 
 /*==== SPEAKER ==========================*/
 .speaker-section {
-    background-color: var(--dark-grey);
+    /* background-color: var(--dark-grey); */
     position: relative;
     overflow: hidden;
 }
@@ -562,6 +565,7 @@ body {
 .speaker-img {
     min-height: 100%;
     width: auto;
+    max-height: 100%;
     position: absolute;
     top: 0;
     left: 50%;
@@ -781,7 +785,6 @@ body {
         transform: translateX(10rem);
     }
     .speaker-section {
-        background-color: var(--dark-grey);
         background-repeat: no-repeat;
         background-position: 0 100%;
         background-size: 50%;
@@ -908,7 +911,6 @@ body {
     }
     .navigation-mobile {
         display: flex;
-        /* flex-direction: column; */
         align-items: flex-end;
         width: auto;
         height: auto;
@@ -926,7 +928,7 @@ body {
     }
     .navigation-mobile .navigation-item {
         display: block;
-        margin: 0 0 0 2rem;
+        margin: 0 0 0 1.5rem;
         font-size: .75rem;
     }
     .hero-section {
@@ -1032,14 +1034,10 @@ body {
     .speaker-img-container {
         width: 100%;
         height: 24rem;
+        background: url('../img/IMG_5031.JPG') no-repeat center / cover;
     }
     .speaker-img {
-        min-height: 100%;
-        width: auto;
-        position: absolute;
-        top: -16%;
-        left: 50%;
-        transform: translateX(-55%);
+        display: none;
     }
     .speaker-text-container {
         width: 100%;
