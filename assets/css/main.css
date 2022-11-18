@@ -491,10 +491,6 @@ body {
 /*==== SPEAKER ==========================*/
 .speaker-section {
     background-color: var(--dark-grey);
-    background-image: url('../img/IMG_1803\ 1.png');
-    background-repeat: no-repeat;
-    background-position: 0 100%;
-    background-size: 25%;
     position: relative;
     overflow: hidden;
 }
@@ -509,8 +505,9 @@ body {
     filter: blur(156.978px);
     transform: rotate(-11.53deg);
 }
-.speaker-section .container {
-    padding: 5rem 0 5rem 16%;
+.speaker-text-container {
+    width: 60%;
+    padding: 5rem 3rem 5rem 0;
 }
 .speaker-name {
     font-weight: 700;
@@ -539,6 +536,21 @@ body {
 .speaker-section .btn {
     max-width: 720px;
     padding: 0 1rem;
+}
+.speaker-img-container {
+    width: 40%;
+    max-height: 100%;
+    height: 56.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.speaker-img {
+    min-height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-55%)
 }
 
 
@@ -632,6 +644,9 @@ body {
     }
     .speaker-section .btn {
         font-size: 1.8rem;
+    }
+    .speaker-img-container {
+        height: 52rem;
     }
 }
 
@@ -751,7 +766,11 @@ body {
         background-size: 50%;
     }
     .speaker-section .container {
-        padding: 5rem 0 5rem 20%;
+        width: 100%;
+    }
+    .speaker-text-container {
+        width: 60%;
+        padding: 4rem 1.2rem 4rem 2rem;
     }
     .speaker-section .section-text {
         text-shadow: 0 3px 6px #111;
@@ -760,6 +779,9 @@ body {
         left: 0;
         right: 50%;
         top: 50%;
+    }
+    .speaker-img-container {
+        height: 50rem;
     }
 }
 
@@ -812,6 +834,9 @@ body {
         font-size: 1.5rem;
         margin: 1.2rem 0;
     }
+    .speaker-img-container {
+        height: 52rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -833,6 +858,14 @@ body {
     }
     .features-list-heading {
         margin: 0 0 2rem 0;
+    }
+    .speaker-text-container {
+        width: 55%;
+        padding: 3rem 1.2rem 3rem 2rem;
+    }
+    .speaker-img-container {
+        width: 55%;
+        height: 58rem;
     }
 }
 
@@ -973,7 +1006,23 @@ body {
         background-size: 80%;
     }
     .speaker-section .container {
-        padding: 4rem 0 4rem 0;
+        flex-direction: column-reverse;
+    }
+    .speaker-img-container {
+        width: 100%;
+        height: 24rem;
+    }
+    .speaker-img {
+        min-height: 100%;
+        width: auto;
+        position: absolute;
+        top: -16%;
+        left: 50%;
+        transform: translateX(-55%);
+    }
+    .speaker-text-container {
+        width: 100%;
+        padding: 2rem 1.5rem 3rem 1.5rem;
     }
     .speaker-name {
         font-size: 2rem;
