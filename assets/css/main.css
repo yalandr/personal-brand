@@ -252,18 +252,15 @@ body {
     letter-spacing: 0.03em;
     color: var(--dark-grey);
     text-align:center;
-    color:#fff;
     animation: text 40s infinite linear;
-    padding-left: 100%;
     white-space: nowrap;
-    transform: translateX(-100%, 0)
 }
 @keyframes text {
     0%{
-      transform: translate(-100%, 0);
+      transform: translate(0, 0);
     }
     100%{
-      transform: translate(-260%, 0);
+      transform: translate(-200%, 0);
     }
 }
 
